@@ -1,1 +1,66 @@
+body{
+    background-color: blanchedalmond;
+    
+}
 
+.container{
+    display: flex;
+    width:80vh;
+}
+
+.container1{
+    width: 160px;
+    border: 1px solid black;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+.stats{
+    border: 1px solid black;
+    background-color: lightblue;
+    width: 80%;
+    align-self: auto;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    
+}
+
+.header{
+    border: 1px solid black;
+    text-align: center;
+    height: 40px;
+}
+
+
+.container2{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    display: inline-block;
+    height: 600px;
+    border: 1px solid black;
+    
+}
+
+.container2 > div *{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    
+}
+
+
+.lfzcard {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    display: inline-block; 
+    
+}
+
+
+.section2{
+    display: inline-block;
+}
