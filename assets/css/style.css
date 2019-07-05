@@ -55,10 +55,32 @@ main{
     
 }*/
 
-.cards{
+.cards {
     display: inline-block;
-    background-color: black;
+
     height: 107px;
     width: 116px;
+    position: relative;
     
+}
+
+.first, .second {
+    background-image: url("../images/lfz-card.jpg");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+}
+
+.cody {
+    background-image: url("/Users/mona/lfz/memory_match/assets/images/cody.jpg");
+}
+
+.brett {
+    background-image: url("/Users/mona/lfz/memory_match/assets/images/brett.jpg");
+}
+
+.hidden {
+    display: none;
+
 }
