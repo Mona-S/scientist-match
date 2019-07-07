@@ -4,7 +4,7 @@ body{
 }
 
 main{
-    display: inline-block;
+    display: inline;
 }
 
 .header{
@@ -41,7 +41,7 @@ main{
     display: inline-block;
     height: 40vh;
     border: 1px solid black;
-    float: right;
+
     
 }
 
@@ -57,30 +57,90 @@ main{
 
 .cards {
     display: inline-block;
-
     height: 107px;
     width: 116px;
     position: relative;
     
 }
 
-.first, .second {
+.first, .second, .third, .fourth , .fifth, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen, .fifteen, .sixteen, .seventeen, .eighteen {
     background-image: url("../images/lfz-card.jpg");
     width: 100%;
     height: 100%;
     position: absolute;
     background-size: cover;
+    z-index: auto;
+    
 }
 
 .cody {
     background-image: url("/Users/mona/lfz/memory_match/assets/images/cody.jpg");
+      
 }
 
-.brett {
+.brett {    
     background-image: url("/Users/mona/lfz/memory_match/assets/images/brett.jpg");
 }
+
+.dan {    
+    background-image: url("/Users/mona/lfz/memory_match/assets/images/dan.jpg");
+}
+
+.scott {
+    background-image: url("/Users/mona/lfz/memory_match/assets/images/scott.jpg");
+
+}
+
+.bill {
+    background-image: url("/Users/mona/lfz/memory_match/assets/images/bill.jpg");
+}
+
+.tim-d {
+    background-image: url("/Users/mona/lfz/memory_match/assets/images/tim-d.jpg");
+}
+
+.tim-h {
+    background-image: url("/Users/mona/lfz/memory_match/assets/images/tim-h.jpg");
+}
+
+.tj {
+    background-image: url("/Users/mona/lfz/memory_match/assets/images/tj.jpg");
+}
+
+.blind-robot{
+    background-image: url("/Users/mona/lfz/memory_match/assets/images/blind-robot.jpg");
+}
+
+
 
 .hidden {
     display: none;
 
+}
+
+.overlay {
+    position: fixed; 
+    display: none;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    background-color: lightblue
+}
+.modal{
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    
+    top:35%;
+    font-size: 20px;
+    width:75%;
+    height:100%;
+}
+
+.tryagain {
+    color: blueviolet;
+    float: left;
+    left:25%;
+    top:25%;
 }
