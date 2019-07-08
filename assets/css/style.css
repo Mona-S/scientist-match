@@ -1,47 +1,49 @@
 body{
-    background-color: blanchedalmond;
-    
-}
-
-main{
+    background-image: url("/Users/mona/lfz/memory_match/assets/images/blind-robot.jpg");
     display: inline;
 }
+/*
+main{
+   
+    width:1000px;
+    height:800px;
+    display: inline-block;
+}*/
 
 .header{
-    border: 1px solid black;
     text-align: center;
-    height: 40px;
-    width: 887px;
+    width: 1200px;
+    height: 200px;
+
 }
 
 .container1{
-    width: 160px;
-    border: 1px solid black;
+    width: 15%;
     text-align: center;
-    display: inline-block;
     vertical-align: top;
+    float: left;
+    display: inline-block;
     
 }
 
 .stats{
     border: 1px solid black;
-    background-color: lightblue;
-    width: 80%;
+    border-radius: 10px;
+    background-color: rgb(37, 133, 165);
+    width: 120px;
     align-self: auto;
-    padding: 10px;
+    padding: 20px;
     margin: 5px;
-    text-align: center;
+    text-align: center; 
+    opacity:.8;
     
 }
 
 .container2{
-    width: 50vw;
-    /*margin: auto;
-    display: flex;*/
+    width:1200px;
+    float: left;
     display: inline-block;
-    height: 40vh;
-    border: 1px solid black;
-
+    height: 1000px;
     
 }
 
@@ -57,13 +59,13 @@ main{
 
 .cards {
     display: inline-block;
-    height: 107px;
-    width: 116px;
+    height: 15%;
+    width: 15%;
     position: relative;
     
 }
 
-.first, .second, .third, .fourth , .fifth, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen, .fifteen, .sixteen, .seventeen, .eighteen {
+.lfz, .first, .second, .third, .fourth , .fifth, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen, .fifteen, .sixteen, .seventeen, .eighteen {
     background-image: url("../images/lfz-card.jpg");
     width: 100%;
     height: 100%;
@@ -75,40 +77,63 @@ main{
 
 .cody {
     background-image: url("/Users/mona/lfz/memory_match/assets/images/cody.jpg");
-      
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
 }
-
 .brett {    
     background-image: url("/Users/mona/lfz/memory_match/assets/images/brett.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
 }
 
 .dan {    
     background-image: url("/Users/mona/lfz/memory_match/assets/images/dan.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
 }
 
 .scott {
     background-image: url("/Users/mona/lfz/memory_match/assets/images/scott.jpg");
-
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
 }
 
 .bill {
     background-image: url("/Users/mona/lfz/memory_match/assets/images/bill.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
 }
 
 .tim-d {
     background-image: url("/Users/mona/lfz/memory_match/assets/images/tim-d.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
 }
 
 .tim-h {
     background-image: url("/Users/mona/lfz/memory_match/assets/images/tim-h.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
 }
 
 .tj {
     background-image: url("/Users/mona/lfz/memory_match/assets/images/tj.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
 }
 
 .blind-robot{
     background-image: url("/Users/mona/lfz/memory_match/assets/images/blind-robot.jpg");
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -138,7 +163,7 @@ main{
     height:100%;
 }
 
-.tryagain {
+#tryagain {
     color: blueviolet;
     float: left;
     left:25%;

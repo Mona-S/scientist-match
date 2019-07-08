@@ -5,78 +5,74 @@ var secondCardClicked = null;
 var matches = null;
 var firstcard = null;
 var nextcard = null;
-var max_matches = 2;
-var attempts;
-var games_played;
+var max_matches = 9;
+var attempts = null;
+var games_played = 0;
 
 function handleCardClick(event){
-    console.log(event);
-    //console.log (firstCardClicked + ' ' + secondCardClicked);
-    $(event.currentTarget).toggleClass(event.currentTarget.nextElementSibling.className);
-
-   if (firstCardClicked === null){
-        firstCardClicked = event.currentTarget.nextElementSibling;
-        console.log("firstcardclicked", firstCardClicked);
-        firstcard = event.currentTarget;  
-        console.log("firstcard",firstcard);   
+    attempts += 1;
+    if (firstCardClicked === null){
+        var y = $(event.currentTarget).children();
+        firstcard = $(y[0]).addClass("hidden"); 
+        firstCardClicked = y[1];
     }
     else{
-        secondCardClicked = event.currentTarget.nextElementSibling;
-        nextcard = event.currentTarget; 
-        console.log("secondcard",nextcard);     
-        //console.log (firstCardClicked + ' ' + secondCardClicked);
-      
+        var x = $(event.currentTarget).children();
+        nextcard = $(x[0]).addClass("hidden"); 
+        secondCardClicked = x[1];
+        games_played += 1;
         if ($(firstCardClicked).css("background-image") === $(secondCardClicked).css("background-image")){
             matches += 1;
-            if(matches === max_matches){
-                console.log('iamhere');
-                console.log($("container2"));
-               $(".overlay").show();
-               $("tryagain").click(initializeApp);
-            }
             console.log(matches);
-            firstCardClicked = null;
-            secondCardClicked = null;
-            firstcard = null;
-            nextcard = null;
-            //console.log (firstCardClicked + ' ' + secondCardClicked);
-        } else {
-            console.log("no matches");
-            //console.log (firstCardClicked + ' ' + secondCardClicked);
-            //console.log ('hi '+ $(firstcard) + ' ' + $(nextcard));
-            
-                setTimeout(function(){
-                    $(firstcard).toggleClass("hidden"); 
-                    $(nextcard).toggleClass("hidden");
-                }, 1500); 
-                firstCardClicked = null;
-                secondCardClicked = null;
-               // firstcard = null;
-                //nextcard = null;
+             if(matches === max_matches){
+                modalDisplay();
+            } 
         } 
-    } 
-    //console.log (firstCardClicked + ' ' + secondCardClicked);
-    //console.log (firstcard + ' ' + nextcard);
-}
+        else { 
+            console.log("no matches");
+                setTimeout(function(){
+                    $(firstcard).removeClass("hidden"); 
+                    $(nextcard).removeClass("hidden");
+                }, 1500);  
+            }  
+            firstCardClicked = null;
+        }
+    displayStats();
+} 
+     
 
 function initializeApp(){
-    $(".first").click(handleCardClick);
-    $(".second").click(handleCardClick);
-    $(".third").click(handleCardClick);
-    $(".fourth").click(handleCardClick);
-    $(".fifth").click(handleCardClick);
-    $(".six").click(handleCardClick);
-    $(".seven").click(handleCardClick);
-    $(".eight").click(handleCardClick);
-    $(".nine").click(handleCardClick);
-    $(".ten").click(handleCardClick);
-    $(".eleven").click(handleCardClick);
-    $(".twelve").click(handleCardClick);
-    $(".thirteen").click(handleCardClick);
-    $(".fourteen").click(handleCardClick);
-    $(".fifteen").click(handleCardClick);
-    $(".sixteen").click(handleCardClick);
-    $(".seventeen").click(handleCardClick);
-    $(".eighteen").click(handleCardClick);
-  
+    $(".cards").click(handleCardClick);
+ } 
+
+function calculateAccuracy(){
+    var accuracy = (matches/games_played)*100;
+    return accuracy;
+}
+
+function displayStats(){
+    var game_accuracy = 0;
+    var game_accuracy =  calculateAccuracy();
+    var a = $(".container1").children();
+    $(a[2]).text(games_played);
+    $(a[4]).text(attempts);
+    $(a[6]).text(game_accuracy+'%');
+}
+
+function modalDisplay(){
+    console.log('games played '+ games_played);
+    $(".overlay").show();
+    console.log('inside');
+    $("#tryagain").click(resetStats());
+               
+}
+
+function resetStats (){
+    console.log('inside reset');
+    console.log(event);
+    var matches = null;
+    var attempts = null; 
+    var game_accuracy = 0;
+   $(".overlay").hide();
+    initializeApp();
 }
