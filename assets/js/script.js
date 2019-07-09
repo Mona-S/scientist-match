@@ -5,30 +5,36 @@ var secondCardClicked = null;
 var matches = null;
 var firstcard = null;
 var nextcard = null;
-var max_matches = 9;
+var max_matches = 4;
 var attempts = null;
 var games_played = 0;
 
+
 function handleCardClick(event){
-    attempts += 1;
+    
     if (firstCardClicked === null){
-        var y = $(event.currentTarget).children();
-        firstcard = $(y[0]).addClass("hidden"); 
-        firstCardClicked = y[1];
+        var card1 = $(event.currentTarget).children();
+        firstcard = $(card1[0]).addClass("hidden"); 
+        firstCardClicked = card1[1];
     }
     else{
-        var x = $(event.currentTarget).children();
-        nextcard = $(x[0]).addClass("hidden"); 
-        secondCardClicked = x[1];
-        games_played += 1;
+        var card2 = $(event.currentTarget).children();
+        nextcard = $(card2[0]).addClass("hidden"); 
+        secondCardClicked = card2[1];
+        
         if ($(firstCardClicked).css("background-image") === $(secondCardClicked).css("background-image")){
             matches += 1;
-            console.log(matches);
+            attempts += 1;
+            $(firstCardClicked).fadeOut(3000);
+            $(secondCardClicked).fadeOut(3000);
              if(matches === max_matches){
+                games_played += 1;
                 modalDisplay();
+                
             } 
         } 
         else { 
+            attempts += 1;
             console.log("no matches");
                 setTimeout(function(){
                     $(firstcard).removeClass("hidden"); 
@@ -45,34 +51,37 @@ function initializeApp(){
     $(".cards").click(handleCardClick);
  } 
 
+
 function calculateAccuracy(){
-    var accuracy = (matches/games_played)*100;
+    var accuracy = ((matches/attempts)*100).toFixed(2);
     return accuracy;
 }
 
+//Stats
 function displayStats(){
     var game_accuracy = 0;
     var game_accuracy =  calculateAccuracy();
-    var a = $(".container1").children();
-    $(a[2]).text(games_played);
-    $(a[4]).text(attempts);
-    $(a[6]).text(game_accuracy+'%');
+    var stats = $(".container1").children();
+    $(stats[2]).text(games_played);
+    $(stats[4]).text(attempts);
+    $(stats[6]).text(game_accuracy + '%');
 }
 
+
 function modalDisplay(){
-    console.log('games played '+ games_played);
     $(".overlay").show();
-    console.log('inside');
-    $("#tryagain").click(resetStats());
+    $("#tryagain").click(resetStats);
                
 }
 
+//Reset Game
 function resetStats (){
-    console.log('inside reset');
-    console.log(event);
-    var matches = null;
-    var attempts = null; 
-    var game_accuracy = 0;
-   $(".overlay").hide();
+    matches = 0;
+    attempts = 0; 
+    game_accuracy = 0;
+    games_played += 1;
+    displayStats();
+    $(".cards  > div").removeClass("hidden");
+    $(".overlay").hide();
     initializeApp();
 }

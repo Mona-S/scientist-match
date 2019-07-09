@@ -1,20 +1,16 @@
 body{
-    background-image: url("/Users/mona/lfz/memory_match/assets/images/blind-robot.jpg");
+    background-image: url("/Users/mona/lfz/memory_match/assets/images/brainimage.jpg");
     display: inline;
+    background-repeat: repeat;
 }
-/*
-main{
-   
-    width:1000px;
-    height:800px;
-    display: inline-block;
-}*/
 
 .header{
     text-align: center;
-    width: 1200px;
-    height: 200px;
-
+    width: 30%; /*1200px;*/
+    height: 30%;/*70px;*/
+    margin: auto;
+    padding: 20px;
+    
 }
 
 .container1{
@@ -29,143 +25,127 @@ main{
 .stats{
     border: 1px solid black;
     border-radius: 10px;
-    background-color: rgb(37, 133, 165);
-    width: 120px;
+    background-color: lightsalmon;
+    width: 65%; /*120px;*/
     align-self: auto;
     padding: 20px;
-    margin: 5px;
+    margin: 15px;
     text-align: center; 
-    opacity:.8;
-    
+    opacity: .9;
+    font-size: 20px;  
 }
 
 .container2{
-    width:1200px;
+    width: 80vw;/*1200px;*/
     float: left;
     display: inline-block;
-    height: 1000px;
-    
+    height: 80vh;/*650px;*/
+    padding: 20px;
+      
 }
-
-
-/*.lfzcard {
-    width: 20px;
-    height: 20px;
-    margin: 10px;
-    display: inline-block; 
-   
-    
-}*/
 
 .cards {
     display: inline-block;
-    height: 15%;
-    width: 15%;
+    height: 30%;/*200px;*/
+    width: 16%;
     position: relative;
+    
     
 }
 
-.lfz, .first, .second, .third, .fourth , .fifth, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen, .fifteen, .sixteen, .seventeen, .eighteen {
+.first, .second, .third, .fourth , .fifth, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen, .fifteen, .sixteen, .seventeen, .eighteen {
     background-image: url("../images/lfz-card.jpg");
     width: 100%;
     height: 100%;
     position: absolute;
     background-size: cover;
-    z-index: auto;
-    
+     
+}
+
+.cody, .brett, .dan, .scott, .bill, .tim-d, .tim-h, .tj, .blind-robot{
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-image: contain; 
 }
 
 .cody {
     background-image: url("/Users/mona/lfz/memory_match/assets/images/cody.jpg");
-    width: 100%;
-    height: 100%;
-    background-size: 100%;
+    
 }
+
 .brett {    
     background-image: url("/Users/mona/lfz/memory_match/assets/images/brett.jpg");
-    width: 100%;
-    height: 100%;
-    background-size: 100%;
+
 }
 
 .dan {    
     background-image: url("/Users/mona/lfz/memory_match/assets/images/dan.jpg");
-    width: 100%;
-    height: 100%;
-    background-size: 100%;
+   
 }
 
 .scott {
     background-image: url("/Users/mona/lfz/memory_match/assets/images/scott.jpg");
-    width: 100%;
-    height: 100%;
-    background-size: 100%;
+    
 }
 
 .bill {
     background-image: url("/Users/mona/lfz/memory_match/assets/images/bill.jpg");
-    width: 100%;
-    height: 100%;
-    background-size: 100%;
+   
 }
 
 .tim-d {
     background-image: url("/Users/mona/lfz/memory_match/assets/images/tim-d.jpg");
-    width: 100%;
-    height: 100%;
-    background-size: 100%;
+    
 }
 
 .tim-h {
     background-image: url("/Users/mona/lfz/memory_match/assets/images/tim-h.jpg");
-    width: 100%;
-    height: 100%;
-    background-size: 100%;
+    
 }
 
 .tj {
     background-image: url("/Users/mona/lfz/memory_match/assets/images/tj.jpg");
-    width: 100%;
-    height: 100%;
-    background-size: 100%;
+    
 }
 
 .blind-robot{
     background-image: url("/Users/mona/lfz/memory_match/assets/images/blind-robot.jpg");
-    width: 100%;
-    height: 100%;
+   
 }
-
-
 
 .hidden {
     display: none;
-
 }
 
 .overlay {
     position: fixed; 
     display: none;
-    top: 25%;
-    left: 25%;
-    width: 50%;
-    height: 50%;
-    background-color: lightblue
+    top: 30%;
+    left: 40%;
+    width: 30%;
+    height: 40%;
+    background-color: rgb(37, 133, 165);
+    border-radius: 10px;
+    
 }
+
 .modal{
     text-align: center;
     position: absolute;
-    z-index: 1;
-    
-    top:35%;
-    font-size: 20px;
+    margin: auto;
+    font-size: 30px;
     width:75%;
     height:100%;
+    left: 15%;
 }
 
 #tryagain {
-    color: blueviolet;
+    font-size: 20px;
     float: left;
     left:25%;
     top:25%;
+    background-color: lightsalmon;
+    margin: 30px;
+    border-radius: 10px;
 }
