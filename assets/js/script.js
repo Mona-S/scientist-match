@@ -5,7 +5,7 @@ var secondCardClicked = null;
 var matches = null;
 var firstcard = null;
 var nextcard = null;
-var max_matches = 4;
+var max_matches = 9;
 var attempts = null;
 var games_played = 0;
 
@@ -35,7 +35,6 @@ function handleCardClick(event){
         } 
         else { 
             attempts += 1;
-            console.log("no matches");
                 setTimeout(function(){
                     $(firstcard).removeClass("hidden"); 
                     $(nextcard).removeClass("hidden");
@@ -67,7 +66,7 @@ function displayStats(){
     $(stats[6]).text(game_accuracy + '%');
 }
 
-
+//Modal
 function modalDisplay(){
     $(".overlay").show();
     $("#tryagain").click(resetStats);
@@ -85,3 +84,4 @@ function resetStats (){
     $(".overlay").hide();
     initializeApp();
 }
+

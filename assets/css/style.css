@@ -1,15 +1,18 @@
 body{
-    background-image: url("/Users/mona/lfz/memory_match/assets/images/brainimage.jpg");
+    background-image: url("/Users/mona/lfz/memory_match/assets/images/math-behind.webp");
     display: inline;
     background-repeat: repeat;
+    
 }
 
 .header{
     text-align: center;
-    width: 30%; /*1200px;*/
-    height: 30%;/*70px;*/
+    width: 30%; 
+    height: 30%;
     margin: auto;
     padding: 20px;
+    color: white;
+    font-size: 50px;
     
 }
 
@@ -26,91 +29,96 @@ body{
     border: 1px solid black;
     border-radius: 10px;
     background-color: lightsalmon;
-    width: 65%; /*120px;*/
+    width: 65%; 
     align-self: auto;
     padding: 20px;
     margin: 15px;
     text-align: center; 
     opacity: .9;
     font-size: 20px;  
+    color: white;
 }
 
 .container2{
-    width: 80vw;/*1200px;*/
+    width: 80vw;
     float: left;
     display: inline-block;
-    height: 80vh;/*650px;*/
-    padding: 20px;
+    height: 80vh;
       
 }
 
 .cards {
     display: inline-block;
-    height: 30%;/*200px;*/
-    width: 16%;
+    height: 30%;
+    width: 15%;
     position: relative;
-    
+    margin-bottom: 10px;
+    margin-right: 10px;
     
 }
 
 .first, .second, .third, .fourth , .fifth, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen, .fifteen, .sixteen, .seventeen, .eighteen {
-    background-image: url("../images/lfz-card.jpg");
+    background-image: url("/Users/mona/lfz/memory_match/assets/images/Quantum-Computing.jpg");
     width: 100%;
     height: 100%;
     position: absolute;
-    background-size: cover;
+    border-radius: 15px;
      
 }
 
-.cody, .brett, .dan, .scott, .bill, .tim-d, .tim-h, .tj, .blind-robot{
+.einstein, .newton, .marie, .feynman, .hawking, .bohr, .galileo, .faraday, .bell{
     width: 100%;
     height: 100%;
     background-size: 100%;
     background-image: contain; 
+    border-radius: 15px;
+
 }
 
-.cody {
-    background-image: url("/Users/mona/lfz/memory_match/assets/images/cody.jpg");
+.einstein {
+    background-image: url("/Users/mona/lfz/memory_match/assets/images/Albert_Einstein.jpg");/*url("/Users/mona/lfz/memory_match/assets/images/cody.jpg");*/
     
 }
 
-.brett {    
-    background-image: url("/Users/mona/lfz/memory_match/assets/images/brett.jpg");
+.newton {    
+    background-image: url("/Users/mona/lfz/memory_match/assets/images/IsaacNewton.jpg");
 
 }
 
-.dan {    
-    background-image: url("/Users/mona/lfz/memory_match/assets/images/dan.jpg");
+.marie {    
+    background-image: url("/Users/mona/lfz/memory_match/assets/images/Marie_Curie.jpg");
    
 }
 
-.scott {
-    background-image: url("/Users/mona/lfz/memory_match/assets/images/scott.jpg");
+.feynman {
+    background-image: url("/Users/mona/lfz/memory_match/assets/images/Richard_Feynman.jpg");
     
 }
 
-.bill {
-    background-image: url("/Users/mona/lfz/memory_match/assets/images/bill.jpg");
+.hawking {
+    background-image: url("/Users/mona/lfz/memory_match/assets/images/stephen-hawking.jpg");
    
 }
 
-.tim-d {
-    background-image: url("/Users/mona/lfz/memory_match/assets/images/tim-d.jpg");
+.bohr {
+    background-image: url("/Users/mona/lfz/memory_match/assets/images/Niels_Bohr.jpg");
+    
     
 }
 
-.tim-h {
-    background-image: url("/Users/mona/lfz/memory_match/assets/images/tim-h.jpg");
+.galileo {
+    background-image: url("/Users/mona/lfz/memory_match/assets/images/galileo.jpg");
+    
     
 }
 
-.tj {
-    background-image: url("/Users/mona/lfz/memory_match/assets/images/tj.jpg");
+.faraday {
+    background-image: url("/Users/mona/lfz/memory_match/assets/images/faraday.jpg");
     
 }
 
-.blind-robot{
-    background-image: url("/Users/mona/lfz/memory_match/assets/images/blind-robot.jpg");
+.bell{
+    background-image: url("/Users/mona/lfz/memory_match/assets/images/Alexander_Graham_Bell.jpg");
    
 }
 
@@ -125,7 +133,7 @@ body{
     left: 40%;
     width: 30%;
     height: 40%;
-    background-color: rgb(37, 133, 165);
+    background-color: rgb(94, 121, 111);
     border-radius: 10px;
     
 }
