@@ -1,8 +1,7 @@
 body{
     background-image: url("/Users/mona/lfz/memory_match/assets/images/math-behind.webp");
     display: inline;
-    background-repeat: repeat;
-    
+    background-repeat: repeat;   
 }
 
 .header{
@@ -12,8 +11,7 @@ body{
     margin: auto;
     padding: 20px;
     color: white;
-    font-size: 50px;
-    
+    font-size: 50px;  
 }
 
 .container1{
@@ -21,8 +19,7 @@ body{
     text-align: center;
     vertical-align: top;
     float: left;
-    display: inline-block;
-    
+    display: inline-block;  
 }
 
 .stats{
@@ -53,8 +50,7 @@ body{
     width: 15%;
     position: relative;
     margin-bottom: 10px;
-    margin-right: 10px;
-    
+    margin-right: 10px;   
 }
 
 .first, .second, .third, .fourth , .fifth, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen, .fifteen, .sixteen, .seventeen, .eighteen {
@@ -62,8 +58,7 @@ body{
     width: 100%;
     height: 100%;
     position: absolute;
-    border-radius: 15px;
-     
+    border-radius: 15px;   
 }
 
 .einstein, .newton, .marie, .feynman, .hawking, .bohr, .galileo, .faraday, .bell{
@@ -72,11 +67,10 @@ body{
     background-size: 100%;
     background-image: contain; 
     border-radius: 15px;
-
 }
 
 .einstein {
-    background-image: url("/Users/mona/lfz/memory_match/assets/images/Albert_Einstein.jpg");/*url("/Users/mona/lfz/memory_match/assets/images/cody.jpg");*/
+    background-image: url("/Users/mona/lfz/memory_match/assets/images/Albert_Einstein.jpg");
     
 }
 
@@ -134,8 +128,7 @@ body{
     width: 30%;
     height: 40%;
     background-color: rgb(94, 121, 111);
-    border-radius: 10px;
-    
+    border-radius: 10px;   
 }
 
 .modal{

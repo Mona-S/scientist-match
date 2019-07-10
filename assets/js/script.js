@@ -17,7 +17,7 @@ function handleCardClick(event){
         firstcard = $(card1[0]).addClass("hidden"); 
         firstCardClicked = card1[1];
     }
-    else{
+    else {
         var card2 = $(event.currentTarget).children();
         nextcard = $(card2[0]).addClass("hidden"); 
         secondCardClicked = card2[1];
@@ -50,7 +50,7 @@ function initializeApp(){
     $(".cards").click(handleCardClick);
  } 
 
-
+//Calculate Accuracy
 function calculateAccuracy(){
     var accuracy = ((matches/attempts)*100).toFixed(2);
     return accuracy;
