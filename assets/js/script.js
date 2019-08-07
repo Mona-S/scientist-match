@@ -8,6 +8,7 @@ var nextcard = null;
 var max_matches = 9;
 var attempts = null;
 var games_played = 0;
+var openCheck = false;
 
 
 function handleCardClick(event){
@@ -21,6 +22,7 @@ function handleCardClick(event){
         var card2 = $(event.currentTarget).children();
         nextcard = $(card2[0]).addClass("hidden"); 
         secondCardClicked = card2[1];
+        openCheck = true;
         if ($(firstCardClicked).css("background-image") === $(secondCardClicked).css("background-image")){
        
             matches += 1;
@@ -38,7 +40,7 @@ function handleCardClick(event){
                 setTimeout(function(){
                     $(firstcard).removeClass("hidden"); 
                     $(nextcard).removeClass("hidden");
-                }, 1500);  
+                }, 300);  
             }  
             firstCardClicked = null;
         }

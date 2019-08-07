@@ -1,5 +1,5 @@
 body{
-    background-image: url("/Users/mona/lfz/memory_match/assets/images/math-behind.webp");
+    background-image: url("/assets/images/math-behind.webp");
     display: inline;
     background-repeat: repeat;   
 }
@@ -54,7 +54,7 @@ body{
 }
 
 .first, .second, .third, .fourth , .fifth, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen, .fifteen, .sixteen, .seventeen, .eighteen {
-    background-image: url("/Users/mona/lfz/memory_match/assets/images/Quantum-Computing.jpg");
+    background-image: url("/assets/images/Quantum-Computing.jpg");
     width: 100%;
     height: 100%;
     position: absolute;
@@ -70,49 +70,49 @@ body{
 }
 
 .einstein {
-    background-image: url("/Users/mona/lfz/memory_match/assets/images/Albert_Einstein.jpg");
+    background-image: url("/assets/images/Albert_Einstein.jpg");
     
 }
 
 .newton {    
-    background-image: url("/Users/mona/lfz/memory_match/assets/images/IsaacNewton.jpg");
+    background-image: url("/assets/images/IsaacNewton.jpg");
 
 }
 
 .marie {    
-    background-image: url("/Users/mona/lfz/memory_match/assets/images/Marie_Curie.jpg");
+    background-image: url("/assets/images/Marie_Curie.jpg");
    
 }
 
 .feynman {
-    background-image: url("/Users/mona/lfz/memory_match/assets/images/Richard_Feynman.jpg");
+    background-image: url("/assets/images/Richard_Feynman.jpg");
     
 }
 
 .hawking {
-    background-image: url("/Users/mona/lfz/memory_match/assets/images/stephen-hawking.jpg");
+    background-image: url("/assets/images/stephen-hawking.jpg");
    
 }
 
 .bohr {
-    background-image: url("/Users/mona/lfz/memory_match/assets/images/Niels_Bohr.jpg");
+    background-image: url("/assets/images/Niels_Bohr.jpg");
     
     
 }
 
 .galileo {
-    background-image: url("/Users/mona/lfz/memory_match/assets/images/galileo.jpg");
+    background-image: url("/assets/images/galileo.jpg");
     
     
 }
 
 .faraday {
-    background-image: url("/Users/mona/lfz/memory_match/assets/images/faraday.jpg");
+    background-image: url("/assets/images/faraday.jpg");
     
 }
 
 .bell{
-    background-image: url("/Users/mona/lfz/memory_match/assets/images/Alexander_Graham_Bell.jpg");
+    background-image: url("/assets/images/Alexander_Graham_Bell.jpg");
    
 }
 
