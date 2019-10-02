@@ -53,12 +53,20 @@ body{
     margin-right: 10px;   
 }
 
-.first, .second, .third, .fourth , .fifth, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen, .fifteen, .sixteen, .seventeen, .eighteen {
+/* .first, .second, .third, .fourth , .fifth, .six, .seven, .eight, .nine, .ten, .eleven, .twelve, .thirteen, .fourteen, .fifteen, .sixteen, .seventeen, .eighteen {
     background-image: url("../images/Quantum-Computing.jpg");
     width: 100%;
     height: 100%;
     position: absolute;
     border-radius: 15px;   
+} */
+
+.front {
+    background-image: url("../images/Quantum-Computing.jpg");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 15px; 
 }
 
 .einstein, .newton, .marie, .feynman, .hawking, .bohr, .galileo, .faraday, .bell{
