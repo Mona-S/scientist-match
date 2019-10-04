@@ -20,7 +20,7 @@ body{
     text-align: center;
     vertical-align: top;
     float: left;
-    display: inline-block;  
+    /* display: inline-block;   */
 }
 
 .stats{
@@ -40,7 +40,7 @@ body{
 .container2{
     width: 80vw;
     float: left;
-    display: inline-block;
+    /* display: inline-block; */
     height: 80vh;
       
 }
