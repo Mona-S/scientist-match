@@ -168,8 +168,7 @@ body{
         height: 100%;
         text-align: center;
         vertical-align: top;
-        margin:20px;
-             
+        margin:20px;         
     }
 
     .container2 {
@@ -187,3 +186,58 @@ body{
         margin-left: 20px; 
     }
 }
+
+@media screen and (max-width: 667px) and (orientation: landscape) {
+    .header{
+        text-align: center;
+        width: 50%; 
+        height: 10%;
+        /* margin: auto; */
+        /* padding: 20px; */
+        color: white;
+        font-size: 40px;  
+    }
+
+    .container1 {
+        width: 20vw;
+        height:100vh;
+        margin:10px;
+        /* height: 80%;
+        text-align: center;
+        vertical-align: top; */    
+    }
+
+    .stats{
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: lightblue;
+        width: 65%; 
+        align-self: auto;
+        padding: 10px;
+        margin: 5px;
+        text-align: center; 
+        opacity: .9;
+        font-size: 12px;  
+        color: black;
+    }
+
+    .container2 {
+        width: 70vw;
+        height: 100vh;
+    }
+
+    .cards {
+        /* display: inline-block; */
+        height: 18%;
+        width: 15%;
+        /* position: relative; */
+        margin-bottom: 10px;
+        margin-right: 2px;  
+        margin-left: 2px; 
+    }
+ 
+    h2 {
+        display:none;
+    }
+}
+
