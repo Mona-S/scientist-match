@@ -1,8 +1,11 @@
 body {
-    background-image: url("../images/math-behind.webp");
+    background-image: url("../images/math-behind.jpg");
     display: inline;
     background-repeat: repeat;   
-    /* background-blend-mode: lighten; */
+    background-blend-mode: lighten;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'PT Serif', serif;
+   
 }
 
 .header {
@@ -24,7 +27,7 @@ body {
 }
 
 .stats {
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 10px;
     background-color: lightblue;
     width: 65%; 
@@ -42,7 +45,7 @@ body {
     float: left;
     /* display: inline-block; */
     height: 80vh;
-      
+    margin-left: 35px;  
 }
 
 .cards {
@@ -63,7 +66,7 @@ body {
 } */
 
 .front {
-    background-image: url("../images/frontCard9.webp");
+    background-image: url("../images/frontCard.jpg");
     width: 100%;
     height: 100%;
     position: absolute;
@@ -172,14 +175,14 @@ body {
         /* margin: auto; */
         /* padding: 20px; */
         /* color: white;*/
-        font-size: 50px; 
+        font-size: 45px; 
     } 
     .container1 {
-        width: 22vw;
+        width: 20vw;
         height: 100%;
         text-align: center;
         vertical-align: top;
-        margin: 20px;         
+        margin: 10px;         
     }
 
     .container2 {
@@ -191,9 +194,9 @@ body {
         border: 1px solid black;
         border-radius: 20px;
         background-color: lightblue;
-        width: 65%; 
+        width: 75%; 
         align-self: auto;
-        padding: 20px;
+        padding: 25px;
         margin: 10px;
         margin-bottom: 20px;
         text-align: center; 
@@ -217,27 +220,28 @@ body {
     .header {
         text-align: center;
         width: 50%; 
-        height: 10%;
+        /* height: 5%; */
         /* margin: auto; */
         /* padding: 20px; */
         color: white;
-        font-size: 40px;  
+        font-size: 30px; 
+        margin-bottom: 1px; 
     }
 
     .container1 {
         width: 20vw;
-        height:100vh;
-        margin:10px;
+        height: 100vh;
+        margin: 10px;
         /* height: 80%;
         text-align: center;
         vertical-align: top; */    
     }
 
     .stats {
-        border: 1px solid black;
+        border: 1px solid white;
         border-radius: 10px;
         background-color: lightblue;
-        width: 65%; 
+        width: 60%; 
         align-self: auto;
         padding: 10px;
         margin: 3px;
@@ -250,6 +254,9 @@ body {
     .container2 {
         width: 70vw;
         height: 100vh;
+        margin-left: 2px;
+        margin-top: 15px;
+        
     }
 
     .cards {
@@ -257,13 +264,17 @@ body {
         height: 19%;
         width: 15%;
         /* position: relative; */
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         margin-right: 2px;  
         margin-left: 2px; 
     }
  
     h2 {
         display:none;
+    }
+
+    body {
+        margin: 0px;
     }
 }
 
