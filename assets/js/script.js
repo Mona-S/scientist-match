@@ -5,7 +5,7 @@ var secondCardClicked = null;
 var matches = null;
 var firstcard = null;
 var nextcard = null;
-var max_matches = 1;
+var max_matches = 9;
 var attempts = null;
 var games_played = 0;
 var openCheck = false;
@@ -51,16 +51,14 @@ function handleCardClick(event){
 function initializeApp(){
 
     $(".cards").on("click", handleCardClick); 
- } 
+} 
 
-//Calculate Accuracy
 function calculateAccuracy(){
 
     var accuracy = ((matches/attempts)*100).toFixed(2);
     return accuracy;
 }
 
-//Stats
 function displayStats(){
 
     var game_accuracy = 0;
@@ -71,15 +69,12 @@ function displayStats(){
     $(stats[6]).text(game_accuracy + '%');
 }
 
-//Modal
 function modalDisplay(){
 
     $(".overlay").show(); 
-    $("#tryagain").on("click", resetStats);
-    
+    $("#tryagain").on("click", resetStats);    
 }
 
-//Reset Game
 function resetStats(){
 
     matches = 0;
