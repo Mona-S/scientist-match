@@ -208,6 +208,43 @@ body {
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .header {
+        /* width: 50%; 
+        height: 10%; */
+        font-size: 45px; 
+    } 
+
+    .container1 {
+        width: 12vw;
+        height: 100%;
+        /* margin: 2px;          */
+    }
+
+    .container2 {
+        width: 84vw;
+        height: 100vh;
+        margin-top: 30px;
+    }
+
+    .cards {
+        height: 20%;
+        width: 15%;
+        margin-bottom: 10px;
+        margin-right: 0px;  
+        margin-left: 7px; 
+    }
+
+    .stats {
+        width: 80%; 
+        padding: 18px; 
+        margin: 5px;
+        margin-bottom: 5px;
+        font-size: 20px;  
+    }
+
+}
+
 @media screen and (max-width: 667px) and (orientation: landscape) {
     .header {
         text-align: center;
