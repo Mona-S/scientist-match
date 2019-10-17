@@ -47,7 +47,7 @@ body {
 
 .cards {
     display: inline-block;
-    /* height: 50%; */
+    height: 50%;
     width: 35%;
     position: relative;
     margin-bottom: 20px;
@@ -129,7 +129,7 @@ body {
     position: fixed; 
     display: none;
     top: 30%;
-    left: 40%;
+    left: 35%;
     width: 35%;
     height: 40%;
     background-color: lightblue;
@@ -152,7 +152,7 @@ body {
     left: 25%;
     top: 25%;
     background-color: white;
-    margin: 45px;
+    margin: 40px;
     border-radius: 10px;
     border: 1px solid black;
 }
@@ -174,6 +174,10 @@ body {
         width: 70vw;
         height: 100vh;
         margin-left: 75px; 
+    }
+
+    .h2 {
+        color: white;
     }
 
     .stats {
@@ -201,7 +205,7 @@ body {
 
     .overlay {
         width: 45%;
-        height: 20%;
+        height: 25%;
     }
 
     #tryagain {
@@ -227,6 +231,7 @@ body {
         width: 82vw;
         height: 100vh;
         margin-top: 30px;
+        color: white; 
     }
 
     .cards {
@@ -237,12 +242,16 @@ body {
         margin-left: 7px; 
     }
 
+    .h2 {
+        color: white;
+    }
     .stats {
         width: 80%; 
         padding: 15px; 
         margin: 10px;
         margin-bottom: 5px;
-        font-size: 20px;  
+        font-size: 20px; 
+        
     }
 
 }
@@ -253,13 +262,16 @@ body {
         text-align: center;
         width: 50%; 
         font-size: 30px; 
-        margin-bottom: 1px; 
+        padding: 10px;
+        /* margin-bottom: 1px;  */
     }
 
     .container1 {
         width: 20vw;
         height: 100vh;
-        margin: 10px;  
+        margin-top: 12px;
+        margin-left: 25px;
+        /* margin-bottom: 90px; */
     }
 
     .stats {
@@ -273,7 +285,7 @@ body {
         width: 70vw;
         height: 100vh;
         margin-left: 2px;
-        margin-top: 15px;
+        /* margin-top: 15px; */
         
     }
 
@@ -289,9 +301,9 @@ body {
         display:none;
     }
 
-    body {
+    /* body {
         margin: 0px;
-    }
+    } */
 
     .modal {
         font-size: 18px;
@@ -335,7 +347,7 @@ body {
         width: 70vw;
         height: 100vh;
         margin-left: 2px;
-        margin-top: 15px;
+        /* margin-top: 15px; */
         
     }
 
@@ -351,9 +363,9 @@ body {
         display:none;
     } */
 
-    body {
+    /* body {
         margin: 0px;
-    }
+    } */
 
     .modal {
         font-size: 18px;
@@ -364,8 +376,8 @@ body {
 
     .overlay {
         left: 30%; 
-        width: 50%;
-        height: 50%;
+        width: 64%;
+        height: 40%;
         
     }
 }
