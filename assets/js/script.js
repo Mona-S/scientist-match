@@ -8,7 +8,6 @@ var nextcard = null;
 var max_matches = 9;
 var attempts = null;
 var games_played = 0;
-var openCheck = false;
 
 
 function handleCardClick(event){
@@ -22,7 +21,6 @@ function handleCardClick(event){
         var card2 = $(event.currentTarget).children();
         nextcard = $(card2[0]).addClass("hidden"); 
         secondCardClicked = card2[1];
-        openCheck = true;
         if ($(firstCardClicked).css("background-image") === $(secondCardClicked).css("background-image")){
        
             matches += 1;
@@ -63,16 +61,24 @@ function displayStats(){
 
     var game_accuracy = 0;
     var game_accuracy =  calculateAccuracy();
+    
+    if(isNaN(game_accuracy)){
+        game_accuracy = 0;
+    }
     var stats = $(".container1").children();
-    $(stats[2]).text(games_played);
-    $(stats[4]).text(attempts);
-    $(stats[6]).text(game_accuracy + '%');
+    $(stats[1]).text(games_played);
+    if(attempts < 1){
+        attempts = 0;
+    }
+    $(stats[3]).text(attempts);
+    $(stats[5]).text(game_accuracy + '%');
 }
 
 function modalDisplay(){
 
     $(".overlay").show(); 
-    $("#tryagain").on("click", resetStats);    
+    $("#tryagain").on("click", resetStats);
+    
 }
 
 function resetStats(){
