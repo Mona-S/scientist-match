@@ -11,7 +11,7 @@ var games_played = 0;
 
 
 function handleCardClick(event){
-
+    playAudio2();
     if (firstCardClicked == null){
         var card1 = $(event.currentTarget).children();
         firstcard = $(card1[0]).addClass("hidden"); 
@@ -22,7 +22,7 @@ function handleCardClick(event){
         nextcard = $(card2[0]).addClass("hidden"); 
         secondCardClicked = card2[1];
         if ($(firstCardClicked).css("background-image") === $(secondCardClicked).css("background-image")){
-       
+            playAudio1();
             matches += 1;
             attempts += 1;
             firstCardClicked = null;
@@ -79,6 +79,18 @@ function modalDisplay(){
     $(".overlay").show(); 
     $("#tryagain").on("click", resetStats);
     
+}
+
+function playAudio1() {
+    var audio = new Audio("assets/audio/success.wav");
+    setTimeout(function(){
+        audio.play();
+    }, 400);
+}
+
+function playAudio2() {
+    var audio1 = new Audio("assets/audio/clicksound.mp3");
+        audio1.play();
 }
 
 function resetStats(){
