@@ -1,5 +1,6 @@
 Scientists Match
 ---------------------------------------------------------------------
+Scientists Match is a memory matching card game. Flip two cards and if they are not the same then they will flip back. If they are same, then it is a match. You need to match nine pairs of cards in as few attempts as possible.
 
 Project Tech Stack
 ------------------------------------------------------------------
@@ -23,7 +24,7 @@ Initial Setup
 
 2.	Clone this repository in your terminal
 
-    •	git clone
+    •	git clone https://github.com/Mona-S/Scientist-Match.git
 
 3.	Navigate into the /Scientist-Match directory
 
