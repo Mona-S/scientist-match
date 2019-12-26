@@ -25,7 +25,7 @@ Initial Setup
 
     •	git clone https://github.com/Mona-S/Scientist-Match.git
 
-3.	Navigate into the /Scientist-Match directory
+3.	Navigate into the /scientist-match directory
 
     •	Open the index.html file and enjoy!
 
