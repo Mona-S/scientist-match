@@ -23,7 +23,7 @@ Initial Setup
 
 2.	Clone this repository in your terminal
 
-    •	git clone https://github.com/Mona-S/Scientist-Match.git
+    •	git clone https://github.com/Mona-S/scientist-match.git
 
 3.	Navigate into the /scientist-match directory
 
