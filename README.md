@@ -1,6 +1,6 @@
 Scientists Match
 ---------------------------------------------------------------------
-Scientists Match is a memory matching card game. Flip two cards and if they are not the same then they will flip back. If they are same, then it is a match. You need to match nine pairs of cards in as few attempts as possible.
+Scientists Match is a memory matching card game. Flip two cards and if they are not the same then they will flip back. If they are same, then it is a match. You need to match nine pairs of cards in as few attempts as possible to win the game.
 
 Project Tech Stack
 ------------------------------------------------------------------
